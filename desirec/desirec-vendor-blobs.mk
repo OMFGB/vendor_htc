@@ -49,4 +49,3 @@ PRODUCT_COPY_FILES += \
     vendor/htc/desirec/proprietary/desirec-keypad.kl:system/usr/keylayout/desirec-keypad.kl \
     vendor/htc/desirec/proprietary/desirec-keypad.kcm.bin:system/usr/keychars/desirec-keypad.kcm.bin \
     vendor/htc/desirec/proprietary/h2w_headset.kl:system/usr/keylayout/h2w_headset.kl \
-    vendor/htc/desirec/proprietary/libwebcore.so:system/lib/libwebcore.so
