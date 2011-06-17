@@ -34,7 +34,15 @@ PRODUCT_COPY_FILES += \
     vendor/htc/desirec/proprietary/liboemcamera.so:system/lib/liboemcamera.so \
     vendor/htc/desirec/proprietary/libOmxH264Dec.so:system/lib/libOmxH264Dec.so \
     vendor/htc/desirec/proprietary/libOmxMpeg4Dec.so:system/lib/libOmxMpeg4Dec.so \
-    vendor/htc/desirec/proprietary/libOmxVidEnc.so:system/lib/libOmxVidEnc.so \
+    vendor/htc/desirec/proprietary/libOmxVidEnc.so:system/lib/libOmxVidEnc.so 
+
+
+# Copy Keylayouts
+PRODUCT_COPY_FILES += \
+    vendor/htc/desirec/proprietary/desirec-keypad.kl:/system/usr/keylayout/desirec-keypad.kl \
+    vendor/htc/desirec/proprietary/desirec-keypad.kcm:system/usr/keylayout/desirec-keypad.kcm \
+    vendor/htc/desirec/proprietary/desirec-keypad.kcm.bin:system/lib/desirec-keypad.kcm.bin \
+    vendor/htc/desirec/proprietary/h2w_headset.kl:system/usr/keylayout/h2w_headset.kl
 
 ifdef WITH_WINDOWS_MEDIA
 PRODUCT_COPY_FILES += \
