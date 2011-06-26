@@ -20,7 +20,6 @@ PRODUCT_COPY_FILES += \
     vendor/htc/mecha/proprietary/libaudio.so:obj/lib/libaudio.so \
     vendor/htc/mecha/proprietary/libaudioalsa.so:obj/lib/libaudioalsa.so \
     vendor/htc/mecha/proprietary/libril.so:obj/lib/libril.so \
-    #vendor/htc/mecha/proprietary/libwebkitaccel.so:obj/lib/libwebkitaccel.so
 
 # All the blobs necessary for mecha
 PRODUCT_COPY_FILES += \
@@ -53,7 +52,6 @@ PRODUCT_COPY_FILES += \
     vendor/htc/mecha/proprietary/libGLESv1_CM_adreno200.so:/system/lib/egl/libGLESv1_CM_adreno200.so \
     vendor/htc/mecha/proprietary/libGLESv2_adreno200.so:/system/lib/egl/libGLESv2_adreno200.so \
     vendor/htc/mecha/proprietary/libq3dtools_adreno200.so:/system/lib/egl/libq3dtools_adreno200.so \
-    vendor/htc/mecha/proprietary/libOmxVdec.so:/system/lib/libOmxVdec.so \
     vendor/htc/mecha/proprietary/libaudio.so:/system/lib/libaudio.so \
     vendor/htc/mecha/proprietary/libaudioalsa.so:/system/lib/libaudioalsa.so \
     vendor/htc/mecha/proprietary/libaudioeq.so:/system/lib/libaudioeq.so \
@@ -107,4 +105,3 @@ PRODUCT_COPY_FILES += \
     vendor/htc/mecha/proprietary/libwmsts.so:/system/lib/libwmsts.so \
     vendor/htc/mecha/proprietary/libwsp.so:/system/lib/libwsp.so \
     vendor/htc/mecha/proprietary/libwsp_jni.so:/system/lib/libwsp_jni.so \
-   # vendor/htc/mecha/proprietary/libwebkitaccel.so:/system/lib/libwebkitaccel.so
