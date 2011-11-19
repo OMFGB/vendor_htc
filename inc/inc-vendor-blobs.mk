@@ -16,38 +16,40 @@
 
 # Prebuilt libraries that are needed to build open-source libraries
 PRODUCT_COPY_FILES += \
-    vendor/htc/inc/proprietary/libcamera.so:obj/lib/libcamera.so
+    vendor/htc/inc/proprietary/lib/libcamera.so:obj/lib/libcamera.so \
+    vendor/htc/inc/proprietary/lib/liba2dp.so:obj/lib/liba2dp.so \
 
 # All the blobs necessary for inc
 PRODUCT_COPY_FILES += \
-    vendor/htc/inc/proprietary/akmd:/system/bin/akmd \
-    vendor/htc/inc/proprietary/snd:/system/bin/snd \
-    vendor/htc/inc/proprietary/snd8k:/system/bin/snd8k \
-    vendor/htc/inc/proprietary/sound8k:/system/bin/sound8k \
-    vendor/htc/inc/proprietary/spkamp:/system/bin/spkamp \
-    vendor/htc/inc/proprietary/wifitools:/system/bin/wifitools \
-    vendor/htc/inc/proprietary/AdieHWCodecSetting.csv:/system/etc/AdieHWCodecSetting.csv \
-    vendor/htc/inc/proprietary/AudioBTID.csv:/system/etc/AudioBTID.csv \
-    vendor/htc/inc/proprietary/TPA2018.csv:/system/etc/TPA2018.csv \
-    vendor/htc/inc/proprietary/WPDB.zip:/system/etc/WPDB.zip \
-    vendor/htc/inc/proprietary/Incredible_C_20100310_VZW_Neo_324016_v4_PMIC.acdb:/system/etc/firmware/Incredible_C_20100310_VZW_Neo_324016_v4_PMIC.acdb \
-    vendor/htc/inc/proprietary/Incredible_C_20100319_VZW_Neo_324016_v5_VZW.acdb:/system/etc/firmware/Incredible_C_20100319_VZW_Neo_324016_v5_VZW.acdb \
-    vendor/htc/inc/proprietary/default.acdb:/system/etc/firmware/default.acdb \
-    vendor/htc/inc/proprietary/default_PMIC.acdb:/system/etc/firmware/default_PMIC.acdb \
-    vendor/htc/inc/proprietary/default_VZW.acdb:/system/etc/firmware/default_VZW.acdb \
-    vendor/htc/inc/proprietary/yamato_pfp.fw:/system/etc/firmware/yamato_pfp.fw \
-    vendor/htc/inc/proprietary/yamato_pm4.fw:/system/etc/firmware/yamato_pm4.fw \
-    vendor/htc/inc/proprietary/libEGL_adreno200.so:/system/lib/egl/libEGL_adreno200.so \
-    vendor/htc/inc/proprietary/libGLESv1_CM_adreno200.so:/system/lib/egl/libGLESv1_CM_adreno200.so \
-    vendor/htc/inc/proprietary/libGLESv2_adreno200.so:/system/lib/egl/libGLESv2_adreno200.so \
-    vendor/htc/inc/proprietary/libq3dtools_adreno200.so:/system/lib/egl/libq3dtools_adreno200.so \
-    vendor/htc/inc/proprietary/libOmxVdec.so:/system/lib/libOmxVdec.so \
-    vendor/htc/inc/proprietary/libcamera.so:/system/lib/libcamera.so \
-    vendor/htc/inc/proprietary/libgsl.so:/system/lib/libgsl.so \
-    vendor/htc/inc/proprietary/libhtc_acoustic.so:/system/lib/libhtc_acoustic.so \
-    vendor/htc/inc/proprietary/libhtc_ril.so:/system/lib/libhtc_ril.so \
-    vendor/htc/inc/proprietary/liboemcamera.so:/system/lib/liboemcamera.so \
-    vendor/htc/inc/proprietary/incrediblec-keypad.kcm.bin:/system/usr/keychars/incrediblec-keypad.kcm.bin \
-    vendor/htc/inc/proprietary/h2w_headset.kl:/system/usr/keylayout/h2w_headset.kl \
-    vendor/htc/inc/proprietary/incrediblec-keypad.kl:/system/usr/keylayout/incrediblec-keypad.kl \
-    vendor/htc/inc/proprietary/Incredible_C_20100921_VZW_Neo_324016_v10_default.acdb:/system/etc/firmware/Incredible_C_20100921_VZW_Neo_324016_v10_default.acdb
+    vendor/htc/inc/proprietary/bin/akmd:/system/bin/akmd \
+    vendor/htc/inc/proprietary/bin/snd:/system/bin/snd \
+    vendor/htc/inc/proprietary/bin/snd8k:/system/bin/snd8k \
+#    vendor/htc/inc/proprietary/bin/sound8k:/system/bin/sound8k \
+    vendor/htc/inc/proprietary/bin/spkamp:/system/bin/spkamp \
+    vendor/htc/inc/proprietary/bin/wifitools:/system/bin/wifitools \
+    vendor/htc/inc/proprietary/etc/AdieHWCodecSetting.csv:/system/etc/AdieHWCodecSetting.csv \
+    vendor/htc/inc/proprietary/etc/AudioBTID.csv:/system/etc/AudioBTID.csv \
+    vendor/htc/inc/proprietary/etc/TPA2018.csv:/system/etc/TPA2018.csv \
+    vendor/htc/inc/proprietary/etc/WPDB.zip:/system/etc/WPDB.zip \
+    vendor/htc/inc/proprietary/etc/Incredible_C_20100310_VZW_Neo_324016_v4_PMIC.acdb:/system/etc/firmware/Incredible_C_20100310_VZW_Neo_324016_v4_PMIC.acdb \
+    vendor/htc/inc/proprietary/etc/Incredible_C_20100319_VZW_Neo_324016_v5_VZW.acdb:/system/etc/firmware/Incredible_C_20100319_VZW_Neo_324016_v5_VZW.acdb \
+    vendor/htc/inc/proprietary/etc/default.acdb:/system/etc/firmware/default.acdb \
+    vendor/htc/inc/proprietary/etc/default_PMIC.acdb:/system/etc/firmware/default_PMIC.acdb \
+    vendor/htc/inc/proprietary/etc/default_VZW.acdb:/system/etc/firmware/default_VZW.acdb \
+    vendor/htc/inc/proprietary/etc/yamato_pfp.fw:/system/etc/firmware/yamato_pfp.fw \
+    vendor/htc/inc/proprietary/etc/yamato_pm4.fw:/system/etc/firmware/yamato_pm4.fw \
+    vendor/htc/inc/proprietary/lib/libaudio.so:/system/lib/libaudio.so \
+    vendor/htc/inc/proprietary/lib/libEGL_adreno200.so:/system/lib/egl/libEGL_adreno200.so \
+    vendor/htc/inc/proprietary/lib/libGLESv1_CM_adreno200.so:/system/lib/egl/libGLESv1_CM_adreno200.so \
+    vendor/htc/inc/proprietary/lib/libGLESv2_adreno200.so:/system/lib/egl/libGLESv2_adreno200.so \
+    vendor/htc/inc/proprietary/lib/libq3dtools_adreno200.so:/system/lib/egl/libq3dtools_adreno200.so \
+    vendor/htc/inc/proprietary/lib/libOmxVdec.so:/system/lib/libOmxVdec.so \
+    vendor/htc/inc/proprietary/lib/libcamera.so:/system/lib/libcamera.so \
+    vendor/htc/inc/proprietary/lib/libgsl.so:/system/lib/libgsl.so \
+    vendor/htc/inc/proprietary/lib/libhtc_acoustic.so:/system/lib/libhtc_acoustic.so \
+    vendor/htc/inc/proprietary/lib/libhtc_ril.so:/system/lib/libhtc_ril.so \
+    vendor/htc/inc/proprietary/lib/liboemcamera.so:/system/lib/liboemcamera.so \
+    vendor/htc/inc/proprietary/usr/incrediblec-keypad.kcm.bin:/system/usr/keychars/incrediblec-keypad.kcm.bin \
+    vendor/htc/inc/proprietary/usr/h2w_headset.kl:/system/usr/keylayout/h2w_headset.kl \
+    vendor/htc/inc/proprietary/usr/incrediblec-keypad.kl:/system/usr/keylayout/incrediblec-keypad.kl \
+    vendor/htc/inc/proprietary/usr/Incredible_C_20100921_VZW_Neo_324016_v10_default.acdb:/system/etc/firmware/Incredible_C_20100921_VZW_Neo_324016_v10_default.acdb
